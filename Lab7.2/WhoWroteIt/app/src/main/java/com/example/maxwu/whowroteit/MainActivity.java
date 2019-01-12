@@ -101,6 +101,7 @@ public class MainActivity extends AppCompatActivity implements LoaderManager.Loa
                 try {
                     title = volumeInfo.getString("title");
                     authors = volumeInfo.getString("authors");
+
                 } catch (Exception e) {
                     e.printStackTrace();
                 }

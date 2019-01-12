@@ -19,6 +19,7 @@ public class NetworkUtils {
     private static final String QUERY_PARAM = "q";
     // Parameter that limits search results.
     private static final String MAX_RESULTS = "maxResults";
+    private static final String DOWNLOAD = "download";
     // Parameter to filter by print type.
     private static final String PRINT_TYPE = "printType";
 
@@ -33,6 +34,7 @@ public class NetworkUtils {
                     .appendQueryParameter(QUERY_PARAM, queryString)
                     .appendQueryParameter(MAX_RESULTS, "10")
                     .appendQueryParameter(PRINT_TYPE, "books")
+                    .appendQueryParameter(DOWNLOAD, "epub")
                     .build();
             URL requestURL = new URL(builtURI.toString());
 
